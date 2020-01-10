@@ -19,6 +19,9 @@ export class ProfileComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.form = this.formBuilder.group({
+      avatar: ['']
+    });
   }
 
 }
