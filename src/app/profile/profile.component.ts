@@ -10,8 +10,12 @@ import { UploadService } from './../upload.service';
 export class ProfileComponent implements OnInit {
   form: FormGroup;
   error: string;
-  userId = 1;
-  uploadResponse = { status: '', message: '', filePath: ''};
+  userId: number = 1;
+  uploadResponse = {
+    status: '',
+    message: '',
+    filePath: ''
+  };
 
   constructor(
     private formBuilder: FormBuilder,
